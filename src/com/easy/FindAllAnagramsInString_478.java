@@ -1,4 +1,21 @@
-// https://leetcode.com/problems/find-all-anagrams-in-a-string/
+/*
+    Problem: https://leetcode.com/problems/find-all-anagrams-in-a-string/
+        Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
+        Strings consists of lowercase English letters only.
+        The length of both strings s and p will not be larger than 20100.
+        The order of output does not matter.
+
+    Input: s: "cbaebabacd" p: "abc"
+
+    Output: [0, 6]
+
+    Notes:
+        1. Make the histogram of letters from "p":
+            - Each char can be converted to number that can be used as index;
+        2. Iterate through each char in "s":
+            a) make a copy of the histogram
+            b) check if the following substring uses all characters from the histogram
+ */
 
 package com.easy;
 
